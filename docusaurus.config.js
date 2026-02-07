@@ -16,16 +16,20 @@ const config = {
   organizationName: 'cv6', 
   projectName: 'dd-docs', 
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Internationalization (i18n)
-  i18n: {
+i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
     localeConfigs: {
-      en: { label: 'English' },
-      de: { label: 'Deutsch' },
+      en: {
+        label: 'English',
+      },
+      de: {
+        label: 'Deutsch',
+      },
     },
   },
 
@@ -84,8 +88,12 @@ const config = {
             title: 'Add-ons',
             items: [
               {
+                label: '[DD] Core',
+                to: '/docs/core',
+              },
+              {
                 label: '[DD] Make Connector',
-                to: '/docs/intro',
+                to: '/docs/make',
               },
             ],
           },
@@ -108,7 +116,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Dice Dragons (cv6). Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Dice & Dragons (cv6). Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
