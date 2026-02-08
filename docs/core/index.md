@@ -8,21 +8,16 @@ description: Basis-Framework für alle Dice Dragons Add-ons
 
 # [DD] Core
 
-Der **Dice Dragons Core** ist das Herzstück und die Voraussetzung für alle weiteren Module (wie den Make Connector). Er stellt grundlegende Funktionen und Helper-Klassen bereit.
+**Dice & Dragons Core** is the foundation and a prerequisite for all other modules (such as the Make Connector). It provides essential base functionality and helper classes.
 
-## Funktionen
+##Features
+*Centralized Logging: All [DD] add-ons write to a shared log channel.
+*Option Helpers: Simplified access to XenForo options.
+*Branding-Free: Centrally manage copyright notices.
 
-* **Zentrales Logging:** Alle [DD] Add-ons schreiben in einen gemeinsamen Log-Channel.
-* **Option-Helper:** Vereinfachter Zugriff auf XenForo-Optionen.
-* **Branding-Free:** Verwalte Copyright-Hinweise zentral.
+##Installation
+*Download the archive.
+*Extract the files and upload the contents of the upload folder to your XenForo root directory.
+*Install the add-on via ACP or CLI: php cmd.php xf:addon-install cv6/Core
 
-## Installation
-
-1. Lade das Archiv herunter.
-2. Entpacke es und lade den Inhalt von `upload` in dein XenForo-Verzeichnis.
-3. Installiere das Add-on via ACP oder CLI:
-   `php cmd.php xf:addon-install cv6/Core`
-
-:::info Abhängigkeit
-Bitte installiere dieses Add-on **zuerst**, bevor du andere [DD] Erweiterungen nutzt.
-:::
+:::info Dependency Please install this add-on first before using any other [DD] extensions. :::
